@@ -23,7 +23,7 @@
 
 ---
 
-### 💻 Tech Arsenal & Tooling
+### 💻 Tech Stacks & Tools
 
 <div align="center">
 
@@ -34,14 +34,14 @@
 
 <br/>
 
-#### Web, Backend & Databases
+#### Web/App
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=react,nextjs,fastapi,nodejs,postgres,supabase,graphql,docker&theme=dark" />
 </a>
 
 <br/>
 
-#### Cybersecurity, Infrastructure & Systems
+#### Cybersecurity
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=kali,linux,wireshark,regex,neovim,git&theme=dark" />
 </a>
@@ -52,7 +52,7 @@
   <img src="https://img.shields.io/badge/Burp_Suite-Web_Security-FF6633?style=flat-square&logo=burpsuite&logoColor=white" height="28" />
 </p>
 
-#### AI & Quantum Computing
+#### AI & Quantum
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,scikit_learn&theme=dark" />
 </a>
@@ -67,7 +67,7 @@
 
 ---
 
-### 🌐 3D Hacker Telemetry & Contribution
+### 🌐 Contributions
 
 <div align="center">
   <!-- ดึงภาพ 3D Night View ที่สร้างจาก Action hacker-telemetry.yml อัตโนมัติ -->
@@ -76,7 +76,7 @@
 
 ---
 
-### 📊 System Telemetry & Statistics
+### 📊 Statistics
 
 <div align="center">
   <!-- GitHub Stats Card & Streak Card โทนสี Cosmic Synthwave -->
