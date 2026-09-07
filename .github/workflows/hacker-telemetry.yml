@@ -2,35 +2,32 @@ name: Generate 3D Hacker Contribution Graph
 
 on:
   schedule:
-    # รันอัตโนมัติทุกๆ เที่ยงคืน (00:00 UTC)
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  generate-3d-contrib:
     runs-on: ubuntu-latest
-    name: generate-3d-contrib
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Generate 3D Contribution Matrix
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        uses: yoshi389111/github-profile-3d-contrib@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: Commit & Deploy SVG Assets
+      - name: Commit & Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A .
-          git commit -m "chore(telemetry): update 3d hacker contribution matrix" || exit 0
-          git push
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git diff --staged --quiet || (git commit -m "chore(telemetry): update 3d contribution graph" && git push)
